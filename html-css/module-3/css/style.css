@@ -1,0 +1,19 @@
+body {
+    font-family: font-family: "Playfair Display", serif;
+    color: #626262;
+    font-size: 14px;
+    line-height: 24px;
+}
+.main-menu {
+    font-size: 14px;
+    }
+
+    .main-menu-point a{
+        color: #626262;
+        text-transform: uppercase;
+        text-decoration: none;
+        line-height: 24px;
+    }
+/* ul {list-style-type: none;} */
+
+
