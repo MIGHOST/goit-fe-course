@@ -154,6 +154,7 @@ color: #ffffff
     float: right;
     background-color:#8c8c8c;
     color: #ffffff;
+    width: 31px;
 }
 .price_product::before {
     content: "\0024";
