@@ -101,14 +101,14 @@ img {
     margin-bottom: 104px;
 }
 .section_head {
-    margin: 0;
-    padding: 0;
-    color: #515151;
-    font: bold 48px "Roboto", sans-serif;
-    text-transform: uppercase;
-    text-decoration: none;
-    line-height: 32px;
-    text-align: center;
+margin: 0;
+padding: 0;
+color: #515151;
+font: bold 48px "Roboto", sans-serif;
+text-transform: uppercase;
+text-decoration: none;
+line-height: 32px;
+text-align: center;
 }
 
 h2::after {
@@ -127,7 +127,8 @@ margin-bottom: 95px;
         list-style-type: none;
 }
 .products {
-    float: left;;
+    float: left;
+    width: 255px;
     margin: 0;
     background-color: #e9f0fd;
     margin-bottom: 30px;    
@@ -135,13 +136,6 @@ margin-bottom: 95px;
 .products:not(:nth-child(4n)) {
     margin-right: 30px;}
 
-.img_produtct {
-    display: table-cell; 
-    vertical-align: middle;
-    text-align: center; 
-    width: 255px;
-    height: 282px;   
-}
 .price_product,
 .named_product {
     font: bold 18px "Roboto", sans-serif;
@@ -179,6 +173,9 @@ color: #ffffff
 
 
 /* BLOGS */
+.blog_news {
+    padding-bottom: 44px;
+}
 .list_news {
     margin: 0;
     padding: 0;
@@ -193,25 +190,32 @@ float: left;
 .list_news_item:last-child {
     margin-right: 0;
 }
+.blog_pictures {
+    margin-bottom: 14px;
+}
+.head_news {
+    margin: 0;
+    font: 700 18px "Open Sans", sans-serif;
+    line-height: 26px;
+    color: #555252;
+    margin-bottom: 36px;    
+}
 
 .head_news::after{
     display: block;
     width: 135px;
     height: 3px;
     background-color: #1abc9c;
-    content: "";
-    margin-top: 15px;
-    margin-bottom: 30px;
+    content: "";    
+     margin-top: 14px;
     }
-.head_news {
-    font: 700 18px "Open Sans", sans-serif;
-    line-height: 26px;
-    color: #555252;
-}
+
 .text_news {
+    margin: 0;
     font: 400 14px "Open Sans", sans-serif;
     line-height: 26px;
     color: #555252;
+    margin-bottom: 16px;
 }
 
 .news_batton {
@@ -220,15 +224,16 @@ float: left;
     height: 50px;
     color: #ffffff;
     background-color: #1abc9c;
-    margin-bottom: 45px;
-    border-radius: 8px; 
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    padding: 18px 0;
 }
 .news_batton:hover,
 .news_batton:focus {
-    border-radius: 3px;
+  border-radius: 3px;
   background-color: rgb(78, 198, 171);
   border-radius: 8px; 
   box-shadow: 0 7px 14px rgba(0, 0, 0, 0.25), 
   0 5px 5px rgba(0, 0, 0, 0.22);
 }
-
