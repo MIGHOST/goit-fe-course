@@ -164,7 +164,8 @@ color: rgb(255, 255, 255);
 /* NEW COLLECTION */
 
 .product_section {
-    margin-bottom: 104px;
+    padding-bottom: 104px;
+    background-color: rgb(233, 240, 253);
 }
 
 .section_head {
@@ -177,6 +178,7 @@ color: rgb(255, 255, 255);
     text-decoration: none;
     line-height: 32px;
     text-align: center;
+    margin-bottom: 95px;
 }
 
 .section_head::after {
@@ -187,11 +189,11 @@ color: rgb(255, 255, 255);
     background-color: rgb(26, 188, 156);
     content: "";
     margin-top: 32px;
-    margin-bottom: 95px;
+   
 }
 
 .list_products {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     list-style-type: none;
 }
