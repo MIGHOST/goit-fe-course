@@ -1,0 +1,272 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Open Sans", "Pe-icon-7-stroke" sans-serif;
+    color: #555252;
+    font-size: 14px;
+    line-height: 11px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+
+
+/* SITE-NAVIGATION */
+.main_header {
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+/* LOGO */
+
+
+.logo_text {
+   flex: inline-flex;
+    color: rgb(149, 225, 211);
+    font: 700 30px 'Montserrat', sans-serif;  
+    text-decoration: none;
+    line-height: 32px;
+}
+
+  
+
+/* NAVIGATION LIST */
+.nav_menu {
+    display: inline-flex;
+    justify-content: space-evenly;
+    
+}
+.nav_list {
+    
+    min-width: 490px;
+    margin: 0;
+    padding: 0;    
+    list-style: none;
+}
+
+.nav_list_item {
+    display: inline-flex;
+   
+}
+
+.nav_list_item:not(:last-child) {
+    margin-right: 57px;
+}
+
+
+.nav_list a {
+    display: block;
+    color: rgb(149, 225, 211);;
+    font: 500 14px 'Montserrat', sans-serif; 
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 11px;
+}
+
+.list_link:hover {
+    color: #f38181;
+}
+
+/* SECTION HEAD */
+.section_begin {
+    margin: 0 auto;
+    font: 300 24px 'Kaushan Script', cursive;
+    color: rgb(51, 51, 51);
+    text-align: center;
+    padding-bottom: 22px;
+    }
+.section_head {
+    margin: 0 auto;
+    padding: 0;
+    color: rgb(51, 51, 51);
+    font: 700 30px 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 32px;
+    text-align: center;
+    margin-bottom: 93px;
+}
+
+.section_head::after {
+    display: block;
+    margin: 0 auto;
+    width: 60px;
+    height: 3px;
+    background-color: rgb(243, 129, 129);
+    content: "";
+    margin-top: 40px;
+   
+}
+
+/* SERVICES*/
+.list_services {
+display: inline-flex;    
+}
+
+.list_srevices_item {
+    list-style: none;
+   }
+.named_services {
+    font: 400 14px 'Montserrat', sans-serif; 
+    color: rgb(154, 154, 154);
+    text-transform: uppercase;
+}
+.descript_services {
+    color: rgb(153, 153, 153);
+    font: 400 15px "Roboto", sans-serif;
+    line-height: 24px;
+}
+
+
+/* TEAM */
+.head_text {
+    color: rgb(153, 153, 153);
+    font: 400 15px "Roboto", sans-serif;
+    line-height: 24px;
+    text-align: center;
+}
+.list_team {
+    display: inline-flex;    
+}
+.list_team_item {
+    list-style: none;
+}
+.named_member 
+
+
+
+
+
+
+.products:nth-last-child(-n + 4) {
+    margin-bottom: 0;
+}
+
+.products:hover .named_product {
+    background-color: rgb(26, 188, 156);
+}
+
+.products:hover .price_product {
+    background-color: rgb(127, 217, 199);
+}
+.for {
+    position: relative;
+}
+/* ANOTHER WINDOW */
+
+.icon_effect {    
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    opacity: 0;
+    top: 10px;
+    background-color: rgba(0, 0, 0, 0.569);
+    width: 235px;
+    height: 300px;      
+}
+.icon_effect_list {
+    list-style: none;
+    margin: 0 auto; 
+   
+    }
+.icon_effect_item {
+    float: left;
+    margin: 80px 6px 6px 0px;
+border: 1px solid rgba(255, 255, 255, 0.938);
+
+}
+.icon_effect_item:last-child {
+    margin-right: 0;
+}
+
+.button_icon {
+    height: 50px;
+    width: 50px;
+    margin: 0;
+    padding: 0;
+border: 0;
+background: none;
+
+
+}
+.button_icon_cart { 
+    width: 167px;
+    height: 50px;
+    margin-left: 40px;
+    background-color: rgba(255, 255, 255, 0.01);
+    border: 1px solid rgb(255, 255, 255, 0.5);
+    color: rgb(255, 255, 255);
+    font: 300 14px 'Open Sans', sans-serif;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255, 0.5);
+}
+
+
+.icon_picture {
+    margin: 0;
+    font: 300 30px "Pe-icon-7-stroke", san-serif;
+    line-height: 32px;
+    color: rgb(255, 255, 255, 0.5);
+   
+}
+
+
+/* HOVER */
+
+.products:hover .icon_effect {
+opacity: 1;}
+
+.button_icon:hover {
+    background-color: #1abc9c;
+}
+
+
+.button_icon_cart:hover {
+    background-color: rgb(50, 50, 50);
+}
+
+/* FOOTER */
+.page_footer {
+    display: block;
+    background-color: rgb(50, 50, 50);
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+   
+
+}
+
+.footer_text {
+    font: 300 16px "Roboto", sans-serif;
+    line-height: 28px;
+    padding: 36px;
+    margin: 0;
+}
+.named_designed { 
+    color: rgb(26, 188, 156);
+
+}
