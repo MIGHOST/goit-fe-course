@@ -31,29 +31,21 @@ img {
 
 
 /* SITE-NAVIGATION */
-.main_header {
-    padding-top: 30px;
-    padding-bottom: 40px;
+
+
+.nav_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 65px;
+        
 }
-/* LOGO */
-
-
 .logo_text {
     color: rgb(149, 225, 211);
     font: 700 30px 'Montserrat', sans-serif;  
     text-decoration: none;
     line-height: 32px;
-}
-
-  
-
-/* NAVIGATION LIST */
-.nav_menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-        
-}
+}  
 .nav_list {
     
     min-width: 490px;
@@ -64,8 +56,6 @@ img {
 
 .nav_list_item {
     display: inline-flex;
-   margin-left: auto; 
-
 }
 
 .nav_list_item:not(:last-child) {
@@ -118,7 +108,7 @@ img {
     text-decoration: none;
     line-height: 32px;
     text-align: center;
-    margin-bottom: 93px;
+    padding-bottom: 93px;
 }
 
 .section_head::after {
@@ -136,14 +126,21 @@ img {
 .list_services {
 display: flex;
 flex-flow: wrap;
+margin: 0 auto;
+padding-left: 92px;
+padding-bottom:92px;
+justify-content: space-between;
 }
 
 .list_srevices_item {
     list-style: none;
-       }
-.list_srevices_item  :not(:last-child) {
+    position: relative;   
+    width: 300px;}
+ 
+
+/* .list_srevices_item:not(:last-child) {
         margin-right: 32px;
-    }
+    } */
 
 
 .named_services {
@@ -162,8 +159,10 @@ flex-flow: wrap;
     width: 32px;
     height: 31px;    
  content: "";
-    margin-top: 40px;
-   
+    position: absolute;
+   left: -52px;
+   top: 0;
+
 }
 .icon_clock::before {
     background-image: url(../img/icon/ALARM.png);
@@ -206,13 +205,6 @@ flex-flow: wrap;
 .img_team {
     text-decoration: none;    
     color: rgb(51, 51, 51);
-}
-.overflow {
-    display: flex;
-    justify-content: center;   
-    overflow: hidden;
-    width: 380px;
-    height: 470px;
 }
 .named_member {
     font: 400 14px 'Montserrat', sans-serif;
@@ -301,24 +293,45 @@ opacity: 1;}
 }
 
 /* FOOTER */
-.page_footer {
-    display: block;
-    background-color: rgb(255, 255, 255);
-    margin: 0;
-    padding: 0;
-    color: rgb(0, 0, 0);
-   
 
+.footer_block {
+    display: flex;
+    justify-content: space-between;    
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .footer_text {
     font: 300 16px "Roboto", sans-serif;
     line-height: 28px;
-    padding: 36px;
-    margin: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.2)
+   min-height: 64px;  
 }
 .named_designed { 
     color: rgb(243, 129, 129);
+}
 
+.text_form,
+.sent_button {
+ min-height: 40px;   
+}
+.form_mail {
+    margin-top: 10px; 
+}
+.text_form {
+font: 300 15px "Roboto", sans-serif;
+line-height: 24px;
+color: rgba(204, 204, 204, 0.2);
+border: 1px solid rgba(204, 204, 204, 0.5);
+margin: 0;
+padding: 0;
+}
+.sent_button {   
+    margin: 0;
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: rgb(149, 225, 211);
+    font: bold 14px 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(255, 255, 255);   
 }
