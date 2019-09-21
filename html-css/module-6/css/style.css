@@ -79,9 +79,9 @@ img {
 }
 
 .nav_list a {
-    display: block;
+ 
     color: rgb(149, 225, 211);
-    ;
+    margin: 0 auto;
     font: 500 14px 'Montserrat', sans-serif;
     text-transform: uppercase;
     text-decoration: none;
@@ -105,20 +105,25 @@ img {
 }
 
 .list_link:hover {
-    color: #f38181;
+    color: rgb(243, 129, 129);
 }
 
 
 /* SECTION HEAD */
-.product_section {
-    padding-bottom: 86px;
-}
-
-.service_part {
+.service_section {
+    margin: 0 auto;
     padding-bottom: 90px;
 }
 
+.team_section {
+    margin: 0 auto;
+    padding-bottom: 86px;
+}
+
+
+
 .section_begin {
+   
     margin: 0 auto;
     font: 300 24px 'Kaushan Script', cursive;
     color: rgb(51, 51, 51);
@@ -155,11 +160,10 @@ img {
     flex-flow: wrap;
     justify-content: space-between;
     margin: 0 auto;
-
-
 }
 
 .list_srevices_item {
+    margin: 0 auto;
     list-style: none;
     position: relative;
     width: 300px;
@@ -170,18 +174,22 @@ img {
 }
 
 .named_services {
+    margin: 0 auto;
     font: 400 14px 'Montserrat', sans-serif;
     color: rgb(154, 154, 154);
     text-transform: uppercase;
+    padding-bottom: 20px;
 }
 
 .descript_services {
+    margin: 0 auto;
     color: rgb(153, 153, 153);
     font: 400 15px "Roboto", sans-serif;
     line-height: 24px;
 }
 
 .list_srevices_item::before {
+    margin: 0 auto;
     display: block;
     width: 32px;
     height: 31px;
@@ -227,6 +235,7 @@ img {
 }
 
 .list_team {
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     margin: 0;
@@ -234,27 +243,23 @@ img {
 }
 
 .list_team_item {
-
+    margin: 0 auto;
     list-style: none;
     position: relative;
     width: 380px;
 }
 
-
-.img_team {
-    text-decoration: none;
-    color: rgb(51, 51, 51);
-
-}
-
-
 .named_member {
+    margin: 0 auto;
     font: 400 14px 'Montserrat', sans-serif;
     text-transform: uppercase;
     text-align: center;
+    padding-top: 30px;
+    padding-bottom: 15px;
 }
 
 .member_position {
+    margin: 0 auto;
     font: 400 15px "Roboto", sans-serif;
     color: rgb(153, 153, 153);
     text-align: center;
@@ -269,19 +274,38 @@ img {
     justify-content: center;
     align-content: center;
     position: absolute;
+    margin: 0 auto;
     bottom: 0;
     left: -10px;
     top: -10px;
     width: 380px;
     height: 470px;
-    z-index: 2;
-    background-image: -moz-linear-gradient(90deg, rgb(252, 227, 138) 0%, rgb(243, 129, 129) 100%);
-    background-image: -webkit-linear-gradient(90deg, rgb(252, 227, 138) 0%, rgb(243, 129, 129) 100%);
-    background-image: -ms-linear-gradient(90deg, rgb(252, 227, 138) 0%, rgb(243, 129, 129) 100%);
+    z-index: 2;    
     opacity: 0;
     transition: color 200ms linear;
     transition: opasity 200ms linear;
 }
+.mattew {
+    background-image: linear-gradient( 0deg,rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%),
+    url(../img/Layer_16.png);
+    position: absolute;
+    z-index: 3; 
+}
+
+.cristoph {
+    background-image: linear-gradient( 0deg,rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%),
+    url(../img/Layer\ 19.png);
+    position: absolute;
+    z-index: 3; 
+}
+.michael {
+    background-image: linear-gradient( 0deg,rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%),
+    url(../img/Layer\ 18.png);
+    position: absolute;
+    z-index: 3; 
+}
+
+
 
 .icon_effect_list {
     display: flex;
@@ -300,6 +324,7 @@ img {
     background-color: rgb(252, 227, 138);
     align-items: center;
     transition: color 200ms linear;
+    margin: 0 auto;
 
 }
 
@@ -366,7 +391,7 @@ img {
 }
 
 .list_team_item:hover .background_list {
-    opacity: 0.8;
+    opacity: 1;
 }
 
 .icon_effect_item:hover {
@@ -383,13 +408,17 @@ img {
 .footer_block {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
-    min-height: ;
+    margin: 0 auto;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 .footer_text {
     font: 300 16px "Roboto", sans-serif;
     line-height: 28px;
+    margin: 0;
 
 }
 
@@ -400,11 +429,13 @@ img {
 .text_form,
 .sent_button {
     min-height: 40px;
+    margin: 0 auto;
 }
 
 .form_mail {
     display: flex;
     margin-top: 10px;
+    margin: 0;
 }
 
 .text_form {
@@ -416,6 +447,7 @@ img {
     padding: 0;
     height: 40px;
     padding-left: 5px;
+   
 }
 
 .sent_button {
@@ -430,7 +462,6 @@ img {
     text-align: center;
     color: rgb(255, 255, 255);
     transition: box-shadow 200ms linear;
-
 }
 
 .sent_button:hover {
