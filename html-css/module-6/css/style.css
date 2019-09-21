@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    font-family: "Open Sans", "Pe-icon-7-stroke" sans-serif;
+    font-family: "Open Sans", "Pe-icon-7-stroke"sans-serif;
     color: #555252;
     font-size: 14px;
     line-height: 11px;
@@ -28,8 +28,6 @@ img {
 
 }
 
-
-
 /* SITE-NAVIGATION */
 
 
@@ -38,67 +36,96 @@ img {
     justify-content: space-between;
     align-items: center;
     min-height: 65px;
-        
+
 }
+
 .logo_text {
     color: rgb(149, 225, 211);
-    font: 700 30px 'Montserrat', sans-serif;  
+    font: 700 30px 'Montserrat', sans-serif;
     text-decoration: none;
     line-height: 32px;
-}  
+
+}
+
+.logo {
+    animation: logo-wake 0.5s linear;
+}
+
+@keyframes logo-wake {
+    0% {
+        transform: translateY(-200px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .nav_list {
-    
+
     min-width: 490px;
-    padding: 0;    
+    padding: 0;
     margin: 0;
     list-style: none;
 }
 
 .nav_list_item {
     display: inline-flex;
+
 }
 
 .nav_list_item:not(:last-child) {
     margin-right: 57px;
 }
 
-
 .nav_list a {
     display: block;
-    color: rgb(149, 225, 211);;
-    font: 500 14px 'Montserrat', sans-serif; 
+    color: rgb(149, 225, 211);
+    ;
+    font: 500 14px 'Montserrat', sans-serif;
     text-transform: uppercase;
     text-decoration: none;
     line-height: 11px;
+    transition: color 200ms linear;
 }
+
 .list_link:after {
     display: block;
-    margin-top:5px ;
+    margin-top: 5px;
     content: "";
     height: 2px;
     width: 0%;
-    background-color:  rgb(243, 129, 129);;
+    background-color: rgb(243, 129, 129);
+    ;
     transition: width .3s ease-in-out;
 }
-.list_link:hover::after{
+
+.list_link:hover::after {
     width: 100%;
-} 
+}
 
 .list_link:hover {
     color: #f38181;
 }
 
+
 /* SECTION HEAD */
 .product_section {
     padding-bottom: 86px;
 }
+
+.service_part {
+    padding-bottom: 90px;
+}
+
 .section_begin {
     margin: 0 auto;
     font: 300 24px 'Kaushan Script', cursive;
     color: rgb(51, 51, 51);
     text-align: center;
     padding-bottom: 22px;
-    }
+}
+
 .section_head {
     margin: 0 auto;
     padding: 0;
@@ -119,35 +146,35 @@ img {
     background-color: rgb(243, 129, 129);
     content: "";
     margin-top: 40px;
-   
+
 }
 
 /* SERVICES*/
 .list_services {
-display: flex;
-flex-flow: wrap;
-margin: 0 auto;
-padding-left: 92px;
-padding-bottom:92px;
-justify-content: space-between;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+
+
 }
 
 .list_srevices_item {
     list-style: none;
-    position: relative;   
-    width: 300px;}
- 
+    position: relative;
+    width: 300px;
+}
 
-/* .list_srevices_item:not(:last-child) {
-        margin-right: 32px;
-    } */
-
+.list_srevices_item:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 100px;
+}
 
 .named_services {
-    font: 400 14px 'Montserrat', sans-serif; 
+    font: 400 14px 'Montserrat', sans-serif;
     color: rgb(154, 154, 154);
     text-transform: uppercase;
 }
+
 .descript_services {
     color: rgb(153, 153, 153);
     font: 400 15px "Roboto", sans-serif;
@@ -157,28 +184,33 @@ justify-content: space-between;
 .list_srevices_item::before {
     display: block;
     width: 32px;
-    height: 31px;    
- content: "";
+    height: 31px;
+    content: "";
     position: absolute;
-   left: -52px;
-   top: 0;
-
+    left: -52px;
+    top: 0;
 }
+
 .icon_clock::before {
     background-image: url(../img/icon/ALARM.png);
 }
+
 .icon_design::before {
     background-image: url(../img/icon/LINE_GRAPH.png);
 }
+
 .icon_seo::before {
     background-image: url(../img/icon/_OK.png);
 }
+
 .icon_creativity::before {
     background-image: url(../img/icon/BOOK_2.png);
 }
+
 .icon_css::before {
     background-image: url(../img/icon/HOME.png);
 }
+
 .icon_digital::before {
     background-image: url(../img/icon/IMAGE.png);
 }
@@ -193,24 +225,35 @@ justify-content: space-between;
     margin: 0 auto;
     padding-bottom: 92px;
 }
+
 .list_team {
     display: flex;
     justify-content: space-between;
     margin: 0;
     padding: 0;
 }
+
 .list_team_item {
+
     list-style: none;
-    }
-.img_team {
-    text-decoration: none;    
-    color: rgb(51, 51, 51);
+    position: relative;
+    width: 380px;
 }
+
+
+.img_team {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+
+}
+
+
 .named_member {
     font: 400 14px 'Montserrat', sans-serif;
     text-transform: uppercase;
-    text-align: center; 
+    text-align: center;
 }
+
 .member_position {
     font: 400 15px "Roboto", sans-serif;
     color: rgb(153, 153, 153);
@@ -220,112 +263,164 @@ justify-content: space-between;
 
 /* ANOTHER WINDOW */
 
-.icon_effect {    
+.icon_effect {
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
     position: absolute;
-    left: 10px;
-    right: 10px;
+    bottom: 0;
+    left: -10px;
+    top: -10px;
+    width: 380px;
+    height: 470px;
+    z-index: 2;
+    background-image: -moz-linear-gradient(90deg, rgb(252, 227, 138) 0%, rgb(243, 129, 129) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(252, 227, 138) 0%, rgb(243, 129, 129) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(252, 227, 138) 0%, rgb(243, 129, 129) 100%);
     opacity: 0;
-    top: 10px;
-    background-color: rgba(0, 0, 0, 0.569);
-    width: 235px;
-    height: 300px;      
+    transition: color 200ms linear;
+    transition: opasity 200ms linear;
 }
+
 .icon_effect_list {
+    display: flex;
     list-style: none;
-    margin: 0 auto; 
-   
-    }
-.icon_effect_item {
-    float: left;
-    margin: 80px 6px 6px 0px;
-border: 1px solid rgba(255, 255, 255, 0.938);
-
-}
-.icon_effect_item:last-child {
-    margin-right: 0;
-}
-
-.button_icon {
-    height: 50px;
-    width: 50px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-border: 0;
-background: none;
-
+    align-items: center;
 
 }
-.button_icon_cart { 
-    width: 167px;
-    height: 50px;
-    margin-left: 40px;
-    background-color: rgba(255, 255, 255, 0.01);
-    border: 1px solid rgb(255, 255, 255, 0.5);
-    color: rgb(255, 255, 255);
-    font: 300 14px 'Open Sans', sans-serif;
-    line-height: 32px;
-    text-transform: uppercase;
-    color: rgb(255, 255, 255, 0.5);
+
+
+.icon_effect_item {
+    display: flex;
+    width: 56px;
+    height: 56px;
+    background-color: rgb(252, 227, 138);
+    align-items: center;
+    transition: color 200ms linear;
+
 }
 
-
-.icon_picture {
-    margin: 0;
-    font: 300 30px "Pe-icon-7-stroke", san-serif;
-    line-height: 32px;
-    color: rgb(255, 255, 255, 0.5);
-   
+.social_media::after {
+    content: '';
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
 }
 
+.with_fb::after {
+    margin-left: 23px;
+    background-image: url(../img/icon/facebook.png);
+    width: 12px;
+    height: 26px;
+}
+
+.with_twitt::after {
+    margin-left: 15px;
+    background-image: url(../img/icon/twitter.png);
+    width: 26px;
+    height: 26px;
+}
+
+.with_pn::after {
+    margin-left: 15px;
+    background-image: url(../img/icon/pinterest.png);
+    width: 26px;
+    height: 26px;
+}
+
+.with_inst::after {
+    margin-left: 15px;
+    background-image: url(../img/icon/instagram.png);
+    width: 26px;
+    height: 26px;
+}
+
+.icon_effect_item:not(:last-child) {
+    margin-right: 1px;
+}
+
+.background_list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 380px;
+    height: 470px;
+    background-color: rgb(149, 225, 211);
+    opacity: 0;
+    transition: opacity 200ms linear;
+}
 
 /* HOVER */
 
-.products:hover .icon_effect {
-opacity: 1;}
-
-.button_icon:hover {
-    background-color: #1abc9c;
+.list_team_item:hover {
+    box-shadow: 5px 5px 10px rgba(153, 153, 153, 0.5),
+        -5px -5px 10px rgba(153, 153, 153, 0.5),
+        -5px 5px 10px rgba(153, 153, 153, 0.5),
+        5px -5px 10px rgba(153, 153, 153, 0.5);
+    border-radius: 5px;
 }
 
-
-.button_icon_cart:hover {
-    background-color: rgb(50, 50, 50);
+.list_team_item:hover .background_list {
+    opacity: 0.8;
 }
+
+.icon_effect_item:hover {
+    background-color: rgb(149, 225, 211);
+}
+
+.list_team_item:hover .icon_effect {
+    opacity: 0.8;
+}
+
 
 /* FOOTER */
 
 .footer_block {
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
+    min-height: ;
 }
 
 .footer_text {
     font: 300 16px "Roboto", sans-serif;
     line-height: 28px;
-   min-height: 64px;  
+
 }
-.named_designed { 
+
+.named_designed {
     color: rgb(243, 129, 129);
 }
 
 .text_form,
 .sent_button {
- min-height: 40px;   
+    min-height: 40px;
 }
+
 .form_mail {
-    margin-top: 10px; 
+    display: flex;
+    margin-top: 10px;
 }
+
 .text_form {
-font: 300 15px "Roboto", sans-serif;
-line-height: 24px;
-color: rgba(204, 204, 204, 0.2);
-border: 1px solid rgba(204, 204, 204, 0.5);
-margin: 0;
-padding: 0;
-}
-.sent_button {   
+    font: 300 15px "Roboto", sans-serif;
+    line-height: 24px;
+    opacity: 0.5;
+    border: 1px solid rgba(204, 204, 204, 0.5);
     margin: 0;
+    padding: 0;
+    height: 40px;
+    padding-left: 5px;
+}
+
+.sent_button {
+    margin: 0;
+    padding: 0;
     width: 150px;
     height: 40px;
     border: none;
@@ -333,5 +428,12 @@ padding: 0;
     font: bold 14px 'Montserrat', sans-serif;
     text-transform: uppercase;
     text-align: center;
-    color: rgb(255, 255, 255);   
+    color: rgb(255, 255, 255);
+    transition: box-shadow 200ms linear;
+
+}
+
+.sent_button:hover {
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.39);
+    transform: scale(1.1);
 }
