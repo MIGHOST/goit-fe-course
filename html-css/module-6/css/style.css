@@ -100,11 +100,13 @@ img {
     transition: width .3s ease-in-out;
 }
 
-.list_link:hover::after {
+.list_link:hover::after,
+.list_link:focus::after {
     width: 100%;
 }
 
-.list_link:hover {
+.list_link:hover,
+.list_link:focus {
     color: rgb(243, 129, 129);
 }
 
@@ -117,7 +119,7 @@ img {
 
 .team_section {
     margin: 0 auto;
-    padding-bottom: 86px;
+    padding-bottom: 70px;
 }
 
 
@@ -263,6 +265,7 @@ img {
     font: 400 15px "Roboto", sans-serif;
     color: rgb(153, 153, 153);
     text-align: center;
+    padding-bottom: 15px;
 
 }
 
@@ -399,7 +402,7 @@ img {
 }
 
 .list_team_item:hover .icon_effect {
-    opacity: 0.8;
+    opacity: 1;
 }
 
 
