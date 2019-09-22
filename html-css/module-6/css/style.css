@@ -211,11 +211,11 @@ img {
     background-image: url(../img/icon/LINE_GRAPH.png);
 }
 
-.icon_seo::before {
+.icon_creativity::before {
     background-image: url(../img/icon/_OK.png);
 }
 
-.icon_creativity::before {
+.icon_seo::before {
     background-image: url(../img/icon/BOOK_2.png);
 }
 
