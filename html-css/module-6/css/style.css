@@ -212,7 +212,7 @@ img {
 }
 
 .icon_creativity::before {
-    background-image: url(../img/icon/_OK.png);
+    background-image: url(../img/icon/creative.png);
 }
 
 .icon_seo::before {
