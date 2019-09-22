@@ -162,13 +162,15 @@ img {
     flex-flow: wrap;
     justify-content: space-between;
     margin: 0 auto;
+    padding: 0;
 }
 
 .list_srevices_item {
     margin: 0 auto;
     list-style: none;
     position: relative;
-    width: 300px;
+    width: 380px;
+    padding-left: 82px;
 }
 
 .list_srevices_item:not(:nth-last-child(-n + 3)) {
@@ -197,7 +199,7 @@ img {
     height: 31px;
     content: "";
     position: absolute;
-    left: -52px;
+    left: 25px;
     top: 0;
 }
 
@@ -328,6 +330,7 @@ img {
     align-items: center;
     transition: color 200ms linear;
     margin: 0 auto;
+    cursor: pointer;
 
 }
 
