@@ -74,16 +74,16 @@
             </div>        
         </section>
     </main>
-    <footer class="page_footer">
-        <div class="footer_block wrapper">
-            <h2 class="footer_head">Contact us</h2>
-            <p class="footer_text">Proin iaculis purus consequat sem cure.</p>
+    <section class="section_form">
+        <div class="form_block wrapper">
+            <h2 class="form_head">Contact us</h2>
+            <p class="form_text">Proin iaculis purus consequat sem cure.</p>
         
-            <form action="send_email" class="form_mail">
-                <input type="text" class="text_form" placeholder="Your name*">
-                <input type="text" class="text_form" placeholder="Your e-mail*">
+            <form action="#" method="GET" class="form_block clearfix">
+                <input type="email" class="text_form" required name="user_name" placeholder="Your name*">
+                <input type="text" class="text_form" required name= "e-mail" placeholder="Your e-mail*">
                 <input type="text" class="text_form" placeholder="Subject">
-                <input type="text" class="text_form" placeholder="Your message*">
+                <textarea name="message" class="text_message" cols="50" rows="10" required placeholder="Your message*"></textarea>
                 <button class="sent_button">Send message</button>
               
             </form>
