@@ -79,11 +79,18 @@
             <h2 class="form_head">Contact us</h2>
             <p class="form_text">Proin iaculis purus consequat sem cure.</p>
         
-            <form action="#" method="GET" class="form_block clearfix">
-                <input type="email" class="text_form" required name="user_name" placeholder="Your name*">
-                <input type="text" class="text_form" required name= "e-mail" placeholder="Your e-mail*">
-                <input type="text" class="text_form" placeholder="Subject">
+            <form action="#" method="GET" class="form_message">
+                <ul class="form_list">
+                    <li class="form_list_item"><input type="text" class="text_form" required name="user_name" placeholder="Your name*">
+                    </li>
+                    <li class="form_list_item"><input type="email" class="text_form" required name= "e-mail" placeholder="Your e-mail*">
+                    </li>
+                    <li class="form_list_item"><input type="text" class="text_form" placeholder="Subject">
+                    </li>
+                </ul>
+                
                 <textarea name="message" class="text_message" cols="50" rows="10" required placeholder="Your message*"></textarea>
+               
                 <button class="sent_button">Send message</button>
               
             </form>

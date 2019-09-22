@@ -88,7 +88,8 @@ img {
     color: rgb(34, 34, 34);
     line-height: 75px;
     text-align: center;
-    text-transform: uppercase;    
+    text-transform: uppercase;
+    padding-top: 125px;    
 }
 
 .section_head {
@@ -110,13 +111,7 @@ img {
 
 .list_srevices_item {
     list-style: none;
-    /* width: 300px; */
 }
-
-/* .list_srevices_item:not(:nth-last-child(-n + 3)) {
-    margin-bottom: 100px;
-} */
-
 .named_services {
     margin: 0 auto;
  
@@ -132,6 +127,7 @@ img {
     margin: 0 auto;
     padding: 0;
     text-align: center;
+    line-height: 24px;
 }
 
 .list_srevices_item::before {
@@ -170,15 +166,12 @@ img {
     
 }
 .form_block {
-    /* display: flex;
-    flex-direction: column;
-    align-content: space-between; */
     margin: 0 auto;
-    display: block;
+    
 }
 .form_head {
     font: 700 40px 'Montserrat', sans-serif;
-    color: #ffffff;
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
     text-align: center;
     padding-top: 100px;
@@ -196,6 +189,21 @@ img {
 }
   
 
+.form_message {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.form_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-right: 30px;   
+}
+.form_list_item:not(:last-child) {
+    margin-bottom: 30px;
+}
 
 .text_form {
     /* display: inline-block; */
@@ -211,8 +219,39 @@ img {
     height: 50px;
     border: none;
     border-radius: 2px;
-    float: left;
+    }
+
+    .text_form[type="text"], [type="email"]
+    {padding-left: 10px;}
+    .text_message[placeholder="Your message*"] {
+        padding: 20px 0 0 20px;
+    }
+
+
+.text_message {
+    /* display: inline-block; */
+    font: 500 14px "Montserrat", sans-serif;
+    text-transform: uppercase;    
+    margin: 0;
+    padding: 0;   
+    padding-left: 5px;
+    color: rgba(187, 187, 187);
+    background-color: rgb(255, 255, 255);
+    width: 455px;
+    height: 210px;
+    border: none;
+    border-radius: 2px;
+    resize: none;    
 }
+.text_form,
+.text_message {
+    box-shadow: 2px 2px 4px rgba(153, 153, 153, 0.5),
+    -2px -2px 4px rgba(153, 153, 153, 0.5),
+    -2px 2px 4px rgba(153, 153, 153, 0.5),
+    2px -2px 4px rgba(153, 153, 153, 0.5);
+
+}
+
 
 .sent_button {
     display: block;
@@ -228,24 +267,10 @@ img {
     color: rgb(255, 255, 255);
     transition: transform 200ms linear;
     border-radius: 2px;
+    margin-top: 30px;
 
 }
-.text_message {
-    /* display: inline-block; */
-    font: 500 14px "Montserrat", sans-serif;
-    text-transform: uppercase;    
-    margin: 0;
-    padding: 0;   
-    padding-left: 5px;
-    color: rgba(187, 187, 187);
-    background-color: rgb(255, 255, 255);
-    width: 455px;
-    height: 210px;
-    border: none;
-    border-radius: 2px;
-    float: right;
-    
-}
+
 .sent_button:hover {
     transform: scale(1.1);
 }
