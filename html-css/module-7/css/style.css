@@ -33,11 +33,13 @@ img {
 
 .logo_text {
     color:rgb(0, 0, 0);
-    font: 400 26px "Wisdom - Script", sans-serif;
+    font-size: 26px;
+    font-family: "Wisdom";
     text-decoration: none;
     line-height: 41px;
-
 }
+
+
 
 .nav_list {
 
@@ -96,9 +98,10 @@ img {
     margin: 0 auto;
     padding: 0;
     color: rgb(119, 119, 119);
-    font: 300 16px 'Droid Serif', sans-serif;
+    font: 300 16px 'Droid', sans-serif;
     text-align: center;
-    padding-bottom: 80px;
+    line-height: 1.2;
+    padding-bottom: 80px;   
 }
 
 /* SERVICES*/
@@ -113,21 +116,23 @@ img {
     list-style: none;
 }
 .named_services {
-    margin: 0 auto;
- 
+    margin: 0 auto; 
     font: 700 18px 'Montserrat', sans-serif;
     line-height: 75px;
     color: rgb(34, 34, 34);
-    text-align: center;   
+    text-align: center;
+       
 }
 
 .descript_services {
+    display: inline-block;
+    width: 280px;
     color: rgb(153, 153, 153);
-    font: 400 14px "Roboto Slab", sans-serif;    
+    font: 300 14px 'RobotoSlab', sans-serif;    
     margin: 0 auto;
-    padding: 0;
+    padding: 0 auto;
     text-align: center;
-    line-height: 24px;
+    line-height: 1.2;
 }
 
 .list_srevices_item::before {
@@ -176,9 +181,10 @@ img {
     text-align: center;
     padding-top: 100px;
     margin: 0 auto;
+    line-height: 1.2;
 }
 .form_text {
-    font: 300 16px "DroidSerif";
+    font: 300 16px 'Droid';
     font-style: italic;
     line-height: 1.2;
     color: rgb(119, 119, 119);
@@ -186,6 +192,7 @@ img {
     margin: 0 auto;
     padding-top: 20px;
     padding-bottom: 70px;
+    line-height: 1.2;
 }
   
 
@@ -206,8 +213,7 @@ img {
 }
 
 .text_form {
-    /* display: inline-block; */
-    font: 500 14px "Montserrat", sans-serif;
+    font: 700 14px 'Montserrat', sans-serif;
     text-transform: uppercase;    
     margin: 0;
     padding: 0;
@@ -219,6 +225,7 @@ img {
     height: 50px;
     border: none;
     border-radius: 2px;
+    line-height: 1.2;
     }
 
     .text_form[type="text"], [type="email"]
@@ -226,11 +233,26 @@ img {
     .text_message[placeholder="Your message*"] {
         padding: 20px 0 0 20px;
     }
+.form_list_item input[type="email"]:valid,
+.form_list_item input[type="text"]:valid {
+    outline: 2px solid rgb(0, 128, 0);
+}
+
+.form_list_item input[type="email"]:invalid,
+.form_list_item input[type="text"]:invalid {
+    outline: 1px solid rgb(255, 0, 0);
+}
+.text_message[type="text"]:valid{
+    outline: 2px solid rgb(0, 128, 0);
+}
+
+.text_message[type="text"]:invalid{
+    outline: 2px solid rgb(255, 0, 0);
+}
 
 
-.text_message {
-    /* display: inline-block; */
-    font: 500 14px "Montserrat", sans-serif;
+.text_message {    
+    font: 700 14px 'Montserrat', sans-serif;
     text-transform: uppercase;    
     margin: 0;
     padding: 0;   
@@ -241,7 +263,8 @@ img {
     height: 210px;
     border: none;
     border-radius: 2px;
-    resize: none;    
+    resize: none;
+    line-height: 1.2;    
 }
 .text_form,
 .text_message {
@@ -268,6 +291,7 @@ img {
     transition: transform 200ms linear;
     border-radius: 2px;
     margin-top: 30px;
+    line-height: 1.2;
 
 }
 
@@ -275,8 +299,35 @@ img {
     transform: scale(1.1);
 }
   
-.clearfix::after {
-    display: table;
-    content: "";
-    clear: both;
+/* montserrat-regular - latin */
+ @font-face { 
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Montserrat/montserrat-v14-latin-regular.woff') format('woff2'),
+    url('../fonts/Montserrat/montserrat-v14-latin-regular.woff2') format('woff'); 
+   } 
+ 
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), 
+         url('../fonts/montserrat-v14-latin-700.woff') format('woff');        
+  } 
+
+  @font-face {
+    font-family:'Wisdom';
+src: url('../fonts/widsom/WisdomScriptAI.woff') format("woff"),
+     url('../fonts/widsom/WisdomScriptAI.woff2') format("woff2");
+}
+@font-face {
+    font-family:'Droid';
+src: url('../fonts/droid/Droid\ Serif\ Italic.woff') format("woff"),
+url('../fonts/droid/Droid\ Serif\ Italic.woff2') format("woff2");
+}
+@font-face {
+font-family:'RobotoSlab';
+src: url('../fonts/roboto/Roboto\ Slab\ Regular.woff') format("woff"),
+url('../fonts/roboto/Roboto\ Slab\ Regular.woff2') format("woff2");
 }
