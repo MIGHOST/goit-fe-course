@@ -37,6 +37,7 @@ img {
     font-family: "Wisdom";
     text-decoration: none;
     line-height: 41px;
+    transition: color 200ms linear;
 }
 
 
@@ -51,7 +52,6 @@ img {
 
 .nav_list_item {
     display: inline-flex;
-
 }
 
 .nav_list_item:not(:last-child) {
