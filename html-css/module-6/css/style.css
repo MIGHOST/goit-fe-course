@@ -67,6 +67,8 @@ img {
     padding: 0;
     margin: 0;
     list-style: none;
+    display: flex;
+    justify-content: space-between;
 }
 
 .nav_list_item {
@@ -74,9 +76,9 @@ img {
 
 }
 
-.nav_list_item:not(:last-child) {
+/* .nav_list_item:not(:last-child) {
     margin-right: 57px;
-}
+} */
 
 .nav_list a {
  

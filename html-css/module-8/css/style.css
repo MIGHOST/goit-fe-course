@@ -1,0 +1,208 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+/* SITE-NAVIGATION */
+.slider_section {
+    background-image: url(/img/Vector\ Smart\ Object.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.header {
+
+}
+.nav_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 65px;
+
+}
+
+.logo_text {
+    color:rgb(0, 0, 0);
+    font-size: 26px;
+    font-family: "Wisdom";
+    text-decoration: none;
+    line-height: 41px;
+    transition: color 200ms linear;
+}
+
+
+
+.nav_list {
+
+    min-width: 490px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav_list_item {
+    display: inline-flex;
+}
+
+.nav_list_item:not(:last-child) {
+    margin-right: 57px;
+}
+
+.nav_list a {
+    display: block;
+    color: rgb(0, 0, 0);
+    font: 700 14px 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 41px;
+    transition: color 200ms linear;
+}
+
+.logo_text:hover,
+.logo_text:focus {
+    color: rgb(254, 209, 54);
+}
+
+.list_link:hover,
+.list_link:focus {
+  color: rgb(254, 209, 54);
+}
+
+
+/* SECTION HEAD */
+.product_section {
+    padding-bottom: 86px;}
+
+
+.section_begin {
+    margin: 0 auto;
+    font: 700 40px 'Montserrat', cursive;
+    color: rgb(34, 34, 34);
+    line-height: 75px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 125px;    
+}
+
+.section_head {
+    margin: 0 auto;
+    padding: 0;
+    color: rgb(119, 119, 119);
+    font: 300 16px 'Droid', sans-serif;
+    text-align: center;
+    line-height: 1.2;
+    padding-bottom: 80px;   
+}
+
+/* SERVICES*/
+.list_services {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.list_srevices_item {
+    list-style: none;
+}
+.named_services {
+    margin: 0 auto; 
+    font: 700 18px 'Montserrat', sans-serif;
+    line-height: 75px;
+    color: rgb(34, 34, 34);
+    text-align: center;
+       
+}
+
+.descript_services {
+    display: inline-block;
+    width: 280px;
+    color: rgb(153, 153, 153);
+    font: 300 14px 'RobotoSlab', sans-serif;    
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.list_srevices_item::before {
+    display: block;
+    width: 67px;
+    height: 67px;
+    content: "";
+    border: 3px solid #fed136;
+    border-radius: 50%;
+    margin: 0 auto;
+    
+}
+
+.icon_backet::before {
+    background-image: url(../img/Icon-Basket.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon_laptop::before {
+    background-image: url(../img/Icon-Laptop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon_locked::before {
+    background-image: url(../img/Icon-Locked.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+  
+/* montserrat-regular - latin */
+ @font-face { 
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Montserrat/montserrat-v14-latin-regular.woff') format('woff2'),
+    url('../fonts/Montserrat/montserrat-v14-latin-regular.woff2') format('woff'); 
+   } 
+ 
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), 
+         url('../fonts/montserrat-v14-latin-700.woff') format('woff');        
+  } 
+
+  /* @font-face {
+    font-family:'Wisdom';
+src: url('../fonts/widsom/WisdomScriptAI.woff') format("woff"),
+     url('../fonts/widsom/WisdomScriptAI.woff2') format("woff2");
+}
+@font-face {
+    font-family:'Droid';
+src: url('../fonts/droid/Droid\ Serif\ Italic.woff') format("woff"),
+url('../fonts/droid/Droid\ Serif\ Italic.woff2') format("woff2");
+} */
+@font-face {
+font-family:'RobotoSlab';
+src: url('../fonts/roboto/Roboto\ Slab\ Regular.woff') format("woff"),
+url('../fonts/roboto/Roboto\ Slab\ Regular.woff2') format("woff2");
+}
