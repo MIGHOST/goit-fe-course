@@ -33,6 +33,7 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    text-align: center;
 }
 .header {
     display: block;
@@ -125,8 +126,7 @@ img {
     padding-bottom: 20px;    
 }
 .button_find {
-    display: block;
-    margin: 0 auto;
+   
     text-decoration: none;
     border: none; 
     background-color: rgb(255, 78, 80);
@@ -134,9 +134,10 @@ img {
     width: 280px;
     height: 40px;
     color: rgb(255, 255, 255);
-    padding: 6px 1px;
+    text-align: center;
+    font: 700 14px 'Montserrat', sans-serif;
     transition: color 200ms linear;
-    margin-bottom: 140px;
+   
 }
 
 .button_find:hover,
@@ -150,7 +151,9 @@ img {
 .section_team {
     margin: 0;
     padding-bottom: 60px;
+    text-align: center;
 }
+
 
 .block_team {
     padding: 0;
@@ -260,9 +263,7 @@ img {
     background-repeat: no-repeat;  
 }
 
-.news_button {
-    display: block;
-    margin: 0 auto;
+.news_button { 
     text-decoration: none;
     border: none; 
     background-color: rgb(255, 255, 255);
@@ -270,7 +271,8 @@ img {
     width: 280px;
     height: 40px;
     color: rgb(255, 75, 80);
-    padding: 6px 1px;
+    text-align: center;
+    font: 700 14px 'Montserrat', sans-serif;
     border: 2px solid rgb(255, 78, 80);
     transition: color 200ms linear;
     
