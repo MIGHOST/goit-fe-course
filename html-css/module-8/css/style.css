@@ -18,7 +18,7 @@ img {
 .wrapper {
     width: 320px;    
     margin: 0 auto;
-    height: auto;
+    
 }
 
 /* SITE-NAVIGATION */
@@ -36,12 +36,13 @@ img {
 }
 .header {
     display: block;
-    margin: 0 auto;
-    padding: 0 auto;
+    margin: 0 auto;    
     padding-left: 20px;
     padding-right: 20px;   
 }
-
+.section_header {
+    min-height: 90px;
+}
 
 .nav_menu {
     padding-top: 20px;
@@ -83,8 +84,7 @@ img {
 .logo {
     display: block;
     margin: 0 auto;
-    text-align: center;
-    padding-top: 120px;
+    text-align: center;   
     padding-bottom: 38px;
 }
 .logo_text {
@@ -97,14 +97,13 @@ img {
     
 }
 
-
-
-
 .list_link:hover,
 .list_link:focus {
     border: 1px solid rgb(255, 255, 255);
     border-radius: 2px
 }
+
+
 
 .head_header {
     margin: 0 auto;
@@ -137,6 +136,7 @@ img {
     color: rgb(255, 255, 255);
     padding: 6px 1px;
     transition: color 200ms linear;
+    margin-bottom: 140px;
 }
 
 .button_find:hover,
