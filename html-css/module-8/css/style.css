@@ -72,6 +72,7 @@ img {
 .nav_button_in {
     border: none;
     margin-right: 5px;  
+    transition: color 200ms linear;
 }
 .nav_button_in:hover,
 .nav_button_in:focus {
@@ -92,16 +93,12 @@ img {
     font: 700 20px 'Montserrat', sans-serif;  
     text-decoration: none;
     line-height: 1.2;
-    /* transition: color 200ms linear; */
+    transition: color 200ms linear;
     
 }
 
 
-.logo_text:hover,
-.logo_text:focus {
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 2px
-}
+
 
 .list_link:hover,
 .list_link:focus {
@@ -139,6 +136,7 @@ img {
     height: 40px;
     color: rgb(255, 255, 255);
     padding: 6px 1px;
+    transition: color 200ms linear;
 }
 
 .button_find:hover,
@@ -174,14 +172,15 @@ img {
     list-style: none;
     text-align: center;
     padding-bottom: 30px;
-    
+     transition: color 200ms linear;    
 }
 .people_list_item {    
     margin: 0;
     padding: 0;
-    position: relative;  
-    
+    position: relative;    
 }
+
+
 /* .people_list_item:not(:last-child) {
     margin-bottom: 30px;
 } */
@@ -273,6 +272,7 @@ img {
     color: rgb(255, 75, 80);
     padding: 6px 1px;
     border: 2px solid rgb(255, 78, 80);
+    transition: color 200ms linear;
     
 }
 
