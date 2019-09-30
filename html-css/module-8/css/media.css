@@ -11,6 +11,10 @@
     flex-direction: row-reverse;
     padding: 48px 38px;
   }
+  .nav_button_in,
+.nav_button_up {
+  margin: 0;
+}
 
   .logo {
     margin: 0;
