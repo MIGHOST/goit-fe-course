@@ -15,6 +15,9 @@
 .nav_button_up {
   margin: 0;
 }
+.nav_button_in {
+  margin-right: 5px;
+}
 
   .logo {
     margin: 0;
@@ -75,11 +78,16 @@ margin: 0 100px;
   .icon_telegram::after {
 bottom: 130px;
   }
-
+  .icon_tv::after {
+    bottom: 95px;
+  }
+  .icon_cup::after {
+    bottom: 110px;
+  }
 }
 
 
-/* DESCTOP */
+/* DESKTOP */
 @media (min-width: 960px) {
   .wrapper {
     width: 942px;
