@@ -37,10 +37,7 @@ img {
     padding-bottom: 30px;  
 
 } 
-/* .nav_button {
-    display: flex;
-    justify-content: center;
-} */
+
 .nav_button_in,
 .nav_button_up {    
     width: 90px;
@@ -95,6 +92,7 @@ img {
 
 .head_header {
     margin: 0 auto;
+    margin-top: 36px;
     text-align: center;
     color: rgb(255, 255, 255);
     font: 700 30px 'Montserrat', sans-serif;
@@ -142,11 +140,7 @@ img {
 }
 
 
-.block_team {
-    padding: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-}
+
 
 .head_text {
     margin: 0;
@@ -167,13 +161,11 @@ img {
 .people_list_item {    
     margin: 0;
     padding: 0;
-    position: relative;    
+    /* position: relative;     */
 }
 
 
-/* .people_list_item:not(:last-child) {
-    margin-bottom: 30px;
-} */
+
 .photo_people {
     display: block;
     margin: 0 auto;
@@ -198,6 +190,13 @@ img {
      padding: 0 30px;
      text-align: center;
 }
+.fixed
+{
+    width: 121px;
+    height: 121px;
+    position: relative;
+    margin: 0 auto;
+}
 
 .another_window::after {
     display: block;
@@ -205,9 +204,9 @@ img {
     content: "";
     position: absolute;    
     width: 37px;
-    height: 37px;   
-    right: 80px;
-    bottom: 85px;   
+    height: 37px;       
+    right: 0;
+    bottom: 0;   
     border-radius: 50%;
     border: 4px solid white;
 }

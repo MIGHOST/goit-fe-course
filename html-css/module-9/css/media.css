@@ -1,147 +1,69 @@
 /* TABLET */
-@media (min-width: 768px) {
-  .wrapper {
-    width: 748px;
-    padding: 0 10px;
-  }
 
-  .nav_menu {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-    padding: 48px 38px;
-  }
-  .nav_button_in,
-.nav_button_up {
-  margin: 0;
-}
-.nav_button_in {
-  margin-right: 5px;
-}
-
-  .logo {
-    margin: 0;
-    text-align: center;
-    padding: 0; 
-  }
-
-
-  .head_header {
-font-size: 52px;
-margin: 0 100px;
-  }
-.section_text {
-  padding-bottom: 35px;
-}
-
-  .button_find {
-    margin: 0 auto;
-  }
-.slider_section {
-  padding-bottom: 235px;
-}
-
-
-  .people_list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .people_list_item {
-    width: 246px;
-  }
-
-  .people_list_item:nth-of-type(1) {
-    order: 1;
-    animation: left-right 2s linear;
-  }
-
-  .people_list_item:nth-of-type(2) {
-    order: 3;
-    animation: up-down 2s linear;
-  }
-
-  .people_list_item:nth-of-type(3) {
-    order: 2;
-    animation: down-up 2s linear;
-  }
-
-  .people_list_item:nth-of-type(4) {
-    order: 4;
-    animation: right-left 2s linear;
-  }
-  .another_window::after {
-    right: 65px;
-    bottom: 100px;
-  }   
-  .icon_telegram::after {
-bottom: 130px;
-  }
-  .icon_tv::after {
-    bottom: 95px;
-  }
-  .icon_cup::after {
-    bottom: 110px;
-  }
-}
-
-
-/* DESKTOP */
-@media (min-width: 960px) {
-  .wrapper {
-    width: 942px;
-    padding: 0 21px;
-  }
-
-  .nav_menu {
-    display: flex;
-    justify-content: space-between; 
-    padding-top: 48px;
-
-  }
-  .service_part {
-    display: block;
-    margin: 0 auto;
-    width: 620px;
-  }
-.head_header {
-  margin: 0 auto;
-} 
-  .logo {
-    margin: 0;
-    text-align: center;
-    padding: 0;    
-  }
-  .people_list {
-    padding-bottom: 40px;
-  }
-  .people_list_item {
-    width: 220px;
-    margin: 0 ;
-  }
-  
-  .section_team {
-    padding-bottom: 74px;
-  }
-  .another_window::after {
-    right: 55px;
-    bottom: 100px;
-  }   
- 
-
-}
-
-@media (min-width:320px) and (max-width:767px)
-{
+@media (max-width: 767px) {
   .people_list_item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 
-@media (min-width:768px) and (max-width:959px)
-{
-  .people_list_item:not(:nth-last-child(-n+2)) {
+@media (min-width:768px) and (max-width: 991px) {
+  .people_list_item {
     margin-bottom: 30px;
   }
 }
+
+@media (min-width: 768px) {
+
+  .justify-content-between {
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
+  }
+
+  .flex-row-reverse {
+    -ms-flex-direction: row-reverse !important;
+    flex-direction: row-reverse !important;
+  }
+
+  .align-items-baseline {
+    -ms-flex-align: baseline !important;
+    align-items: baseline !important;
+  }
+
+  .justify-content-end {
+    -ms-flex-pack: end !important;
+    justify-content: flex-end !important;
+  }
+
+  .nav_button_in,
+  .nav_button_up {
+    margin: 0;
+  }
+
+  .nav_button_in {
+    margin-right: 5px;
+  }
+
+  .logo {
+    margin: 0;
+    text-align: center;
+    padding: 0;
+  }
+
+
+
+
+  .people_list_item:nth-of-type(1) {
+    order: 1;
+  }
+
+  .people_list_item:nth-of-type(2) {
+    order: 3;
+  }
+
+  .people_list_item:nth-of-type(3) {
+    order: 2;
+  }
+
+  .people_list_item:nth-of-type(4) {
+    order: 4;
+  }
