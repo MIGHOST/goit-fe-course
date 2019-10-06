@@ -233,20 +233,20 @@ img {
     .text_message[placeholder="Your message*"] {
         padding: 20px 0 0 20px;
     }
-.form_list_item input[type="email"]:valid,
-.form_list_item input[type="text"]:valid {
-    outline: 2px solid rgb(0, 128, 0);
+.form_list_item input[type="email"]:valid:focus,
+.form_list_item input[type="text"]:valid:focus {
+    outline: 3px solid rgb(0, 128, 0);
 }
 
-.form_list_item input[type="email"]:invalid,
-.form_list_item input[type="text"]:invalid {
+.form_list_item input[type="email"]:invalid:focus,
+.form_list_item input[type="text"]:invalid:focus {
     outline: 1px solid rgb(255, 0, 0);
 }
-.text_message[type="text"]:valid{
-    outline: 2px solid rgb(0, 128, 0);
+.text_message[type="text"]:valid:focus{
+    outline: 3px solid rgb(33, 182, 33);
 }
 
-.text_message[type="text"]:invalid{
+.text_message[type="text"]:invalid:focus{
     outline: 2px solid rgb(255, 0, 0);
 }
 
