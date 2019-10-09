@@ -1,0 +1,20 @@
+/*
+   Import partials below
+*/
+@import './helpers/variables.scss';
+@import './normalize.scss';
+@import './bases';
+
+
+// /components/
+
+@import './src/sass/components/link.scss';
+@import './src/sass/components/list.scss';
+@import './src/sass/components/container.scss';
+@import './src/sass/components/header.scss';
+@import './src/sass/components/page_nav.scss';
+@import './src/sass/components/site_logo.scss';
+@import './src/sass/components/site_navigation.scss';
+@import './src/sass/components/services.scss';
+@import './src/sass/components/team.scss';
+@import './src/sass/components/page_footer.scss';
