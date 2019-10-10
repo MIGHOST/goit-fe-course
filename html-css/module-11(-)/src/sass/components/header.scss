@@ -3,17 +3,17 @@
    
     background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.9)),
       to(rgba(243, 129, 129, 0.9))),
-     url(../img/Layer_15.png);
+     url(../images/Layer_15.png);
     
     background-image: -o-linear-gradient(bottom, rgba(252, 227, 138, 0.9) 0%,
       rgba(243, 129, 129, 0.9) 100%),
-     url(../img/Layer_15.png);
+     url(../images/Layer_15.png);
     
     background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%,
       rgba(243, 129, 129, 0.9) 100%),
-     url(../img/Layer_15.png); 
+     url(../images/Layer_15.png); 
      color: $primary-white-color;
- 
+    
  }
  .main-header {
      padding-top: 30px;
@@ -31,9 +31,7 @@
              justify-content: space-between;
  }
 
-
-
- header-head__text {
+.header-head__text {
 
     font: 400 72px "Kaushan Script", sans-serif; 
     line-height: 1.2;
@@ -51,10 +49,8 @@
     margin: 0;
     
     }
-    .header-head__link {
-        
-        margin: 0 auto;
-     
+  .header-head__link {        
+        margin: 0 auto;     
         color: $primary-white-color;
         width: 160px;
     height: 40px;
@@ -67,17 +63,14 @@
     transition: -webkit-transform 200ms linear;
     -o-transition: transform 200ms linear;
     transition: transform 200ms linear;
-    transition: transform 200ms linear, -webkit-transform 200ms linear;
-    
-    
-    }
-    .header-head__link:hover {
-        -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1);
-      -webkit-box-shadow: 0 7px 14px rgba(0, 0, 0, 0.25), 
-      0 5px 5px rgba(0, 0, 0, 0.22);
-              box-shadow: 0 7px 14px rgba(0, 0, 0, 0.25), 
-      0 5px 5px rgba(0, 0, 0, 0.22);
-    }
+    transition: transform 200ms linear, -webkit-transform 200ms linear;  
+    $:hover {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+    -webkit-box-shadow: 0 7px 14px rgba(0, 0, 0, 0.25), 
+    0 5px 5px rgba(0, 0, 0, 0.22);
+            box-shadow: 0 7px 14px rgba(0, 0, 0, 0.25), 
+    0 5px 5px rgba(0, 0, 0, 0.22);
+  }  
     

@@ -31,12 +31,13 @@
     position: relative;
     width: 380px;
     padding-left: 82px;
+    &:not(:nth-last-child(-n + 3)) {
+        margin-bottom: 100px;
+    }
+    
 }
 
-.service-block__item:not(:nth-last-child(-n + 3)) {
-    margin-bottom: 100px;
-}
-
+.service-block__item
 .service-block__item-title {
     margin: 0 auto;
     font: 400 14px 'Montserrat', sans-serif;
@@ -64,25 +65,25 @@
 }
 
 .icon_clock::before {
-    background-image: url(../img/icon_svg/ALARM.svg);
+    background-image: url(.);
 }
 
 .icon_design::before {
-    background-image: url(../img/icon_svg/LINE.svg);
+    background-image: url(../images/icons/LINE.svg);
 }
 
 .icon_creativity::before {
-    background-image: url(../img/icon_svg/COMPUTER.svg);
+    background-image: url(../images/icons/COMPUTER.svg);
 }
 
 .icon_seo::before {
-    background-image: url(../img/icon_svg/BOOK.svg);
+    background-image: url(../images/icons/BOOK.svg);
 }
 
 .icon_css::before {
-    background-image: url(../img/icon_svg/HOME.svg);
+    background-image: url(../images/icons/HOME.svg);
 }
 
 .icon_digital::before {
-    background-image: url(../img/icon_svg/01.svg);
+    background-image: url(../images/icons/01.svg);
 }
