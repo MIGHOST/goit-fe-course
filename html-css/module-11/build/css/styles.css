@@ -551,7 +551,7 @@ img {
 .nav-list__link {
   color: white;
   margin: 0 auto;
-  font: 100 14px 'Montserrat', sans-serif;
+  font: 300 14px 'Montserrat', sans-serif;
   text-transform: uppercase;
   line-height: 1.2;
   transition: color 200ms linear;
