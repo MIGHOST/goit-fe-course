@@ -1,0 +1,27 @@
+.text {
+    font: 300 24px 'Kaushan Script', cursive;
+    color: $secondary-text-color;
+    text-align: center;
+    margin: 0;
+}
+
+.title {
+margin: 0;
+    color: $secondary-text-color;
+    font: 700 30px 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 32px;
+    text-align: center;
+    &::after {
+        display: block;
+        margin: 0 auto;
+        width: 60px;
+        height: 3px;
+        background-color: $secondary-bg-color;
+        content: "";
+        margin-top: 40px;   
+    
+    }
+}
+

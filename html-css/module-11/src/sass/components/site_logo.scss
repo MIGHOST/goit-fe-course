@@ -1,6 +1,7 @@
 
 
 .site-logo__link {
+    @extend %link;
     color: $primary-white-color;
     font: 700 30px 'Montserrat', sans-serif;    
     line-height: 32px;

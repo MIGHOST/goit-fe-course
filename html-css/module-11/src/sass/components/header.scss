@@ -1,6 +1,6 @@
 
-.header-block {
-   
+.header-block {  
+     
     background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.9)),
       to(rgba(243, 129, 129, 0.9))),
      url(../images/Layer_15.png);
@@ -49,7 +49,8 @@
     margin: 0;
     
     }
-  .header-head__link {        
+  .header-head__link {   
+        @extend %link;     
         margin: 0 auto;     
         color: $primary-white-color;
         width: 160px;
@@ -64,7 +65,7 @@
     -o-transition: transform 200ms linear;
     transition: transform 200ms linear;
     transition: transform 200ms linear, -webkit-transform 200ms linear;  
-    $:hover {
+    &:hover {
       -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
       transform: scale(1.1);
@@ -73,4 +74,4 @@
             box-shadow: 0 7px 14px rgba(0, 0, 0, 0.25), 
     0 5px 5px rgba(0, 0, 0, 0.22);
   }  
-    
+}
