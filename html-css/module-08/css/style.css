@@ -68,16 +68,19 @@ img {
     text-align: center;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 20px;   
-    cursor: pointer;    
+    cursor: pointer; 
+outline: none;   
 }
 .nav_button_in {
     border: none;
     margin-right: 5px;  
+outline: none;
     transition: color 200ms linear;
 }
 .nav_button_in:hover,
 .nav_button_in:focus {
     border: 2px solid rgb(255, 255, 255);
+outline: none;
 }
   
 
@@ -101,6 +104,7 @@ img {
 .list_link:focus {
     border: 1px solid rgb(255, 255, 255);
     border-radius: 2px
+outline: none;
 }
 
 
@@ -125,7 +129,7 @@ img {
     padding-bottom: 20px;    
 }
 .button_find {
-   
+   outline: none;
     text-decoration: none;
     border: none; 
     background-color: rgb(255, 78, 80);
@@ -144,7 +148,10 @@ img {
     background-color: rgb(255, 255, 255);
     color: rgb(255, 78, 80);
     border: 2px solid rgb(255, 78, 80);
+    border-radius: 20px;
+outline: none;
 }
+
 
 /* SECTION-TEAM */
 .section_team {
@@ -263,7 +270,6 @@ img {
 }
 
 .news_button { 
-    text-decoration: none;
     border: none; 
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
@@ -274,6 +280,7 @@ img {
     font: 700 14px 'Montserrat', sans-serif;
     border: 2px solid rgb(255, 78, 80);
     transition: color 200ms linear;
+outline: none;
     
 }
 
@@ -281,5 +288,7 @@ img {
 .news_button:focus {
     background-color: rgb(255, 78, 80);
     color: rgb(255, 255, 255);
-    
+    border-radius: 20px;
+outline: none;
 }
+
