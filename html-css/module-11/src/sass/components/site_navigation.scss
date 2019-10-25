@@ -3,17 +3,11 @@
 .nav-list {
     @extend %list;
     min-width: 490px;   
-    display: -webkit-box;   
-    display: -ms-flexbox;   
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
             justify-content: space-between;
 }
 
 .nav_list__item {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
     display: inline-flex;
 
 }
@@ -26,8 +20,6 @@
     font: 300 14px 'Montserrat', sans-serif;
     text-transform: uppercase;   
     line-height: 1.2;
-    -webkit-transition: color 200ms linear;
-    -o-transition: color 200ms linear;
     transition: color 200ms linear;
 
     &:hover,
@@ -42,8 +34,6 @@
         height: 2px;
         width: 0;
         background-color: $main-yellow-color;
-        -webkit-transition: width .3s ease-in-out;
-        -o-transition: width .3s ease-in-out;
         transition: width .3s ease-in-out;
     }
     &:hover::after,

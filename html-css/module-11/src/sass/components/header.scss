@@ -1,13 +1,5 @@
 
 .header-block {  
-     
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.9)),
-      to(rgba(243, 129, 129, 0.9))),
-     url(../images/Layer_15.png);
-    
-    background-image: -o-linear-gradient(bottom, rgba(252, 227, 138, 0.9) 0%,
-      rgba(243, 129, 129, 0.9) 100%),
-     url(../images/Layer_15.png);
     
     background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%,
       rgba(243, 129, 129, 0.9) 100%),
@@ -19,15 +11,8 @@
      padding-top: 30px;
      padding-bottom: 230px;
      min-height: 1000px;
-     display: -webkit-box;
-     display: -ms-flexbox;
      display: flex;
-     -webkit-box-orient: vertical;
-     -webkit-box-direction: normal;
-         -ms-flex-direction: column;
              flex-direction: column;
-     -webkit-box-pack: justify;
-         -ms-flex-pack: justify;
              justify-content: space-between;
  }
 
@@ -60,17 +45,9 @@
     text-transform: uppercase;
     text-align: center;
     padding-top: 10px;
-    -webkit-transition: -webkit-transform 200ms linear;
-    transition: -webkit-transform 200ms linear;
-    -o-transition: transform 200ms linear;
     transition: transform 200ms linear;
-    transition: transform 200ms linear, -webkit-transform 200ms linear;  
     &:hover {
-      -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
       transform: scale(1.1);
-    -webkit-box-shadow: 0 7px 14px rgba(0, 0, 0, 0.25), 
-    0 5px 5px rgba(0, 0, 0, 0.22);
             box-shadow: 0 7px 14px rgba(0, 0, 0, 0.25), 
     0 5px 5px rgba(0, 0, 0, 0.22);
   }  

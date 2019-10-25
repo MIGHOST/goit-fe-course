@@ -7,11 +7,12 @@
 
 @import './normalize';
 @import './bases';
-@import './fonts.scss';
+@import './fonts';
 
 
 // /components/
 @import './src/sass/components/media';
+@import './src/sass/components/container';
 @import './src/sass/components/title_text';
 @import './src/sass/components/header';
 @import './src/sass/components/page_nav';

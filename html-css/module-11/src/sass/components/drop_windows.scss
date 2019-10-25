@@ -1,15 +1,7 @@
 
 .icon-effect {
-
-    display: -webkit-box;
-
-    display: -ms-flexbox;
-
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
             justify-content: center;
-    -ms-flex-line-pack: center;
         align-content: center;
     position: absolute;
     margin: 0 auto;
@@ -20,18 +12,10 @@
     height: 470px;
     z-index: 2;    
     opacity: 0;
-    -webkit-transition: color 200ms linear;
-    -o-transition: color 200ms linear;
     transition: color 200ms linear;
-    -webkit-transition: opasity 200ms linear;
-    -o-transition: opasity 200ms linear;
-    transition: opasity 200ms linear;
+        transition: opasity 200ms linear;
 }
 .mattew {
-    background-image: -webkit-gradient( linear,left bottom, left top,from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9))),
-    url(../images/Layer_16.png);
-    background-image: -o-linear-gradient( bottom,rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%),
-    url(../images/Layer_16.png);
     background-image: linear-gradient( 0deg,rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%),
     url(../images/Layer_16.png);
     position: absolute;
@@ -39,20 +23,12 @@
 }
 
 .cristoph {
-    background-image: -webkit-gradient( linear,left bottom, left top,from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9))),
-    url(../images/Layer_19.png);
-    background-image: -o-linear-gradient( bottom,rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%),
-    url(../images/Layer_19.png);
     background-image: linear-gradient( 0deg,rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%),
     url(../images/Layer_19.png);
     position: absolute;
     z-index: 3; 
 }
 .michael {
-    background-image: -webkit-gradient( linear,left bottom, left top,from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9))),
-    url(../images/Layer_18.png);
-    background-image: -o-linear-gradient( bottom,rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%),
-    url(../images/Layer_18.png);
     background-image: linear-gradient( 0deg,rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%),
     url(../images/Layer_18.png);
     position: absolute;
@@ -63,57 +39,43 @@
 
 .icon-effect__list {
     @extend %list;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;  
     margin: 0 auto;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
 
 }
 
 
 .icon-effect__link {
     @extend %link;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;   
-    -webkit-box-align: center;   
-        -ms-flex-align: center;   
+            justify-content: center;      
             align-items: center;
     width: 56px;
     height: 56px;
     background-color: $main-yellow-color;
     cursor: pointer;
-    -webkit-transition: color 200ms linear;
-    -o-transition: color 200ms linear;
     transition: color 200ms linear;
     border-left: 1px solid $secondary-bg-color;
-    -webkit-transition: color 300ms linear;
-    -o-transition: color 300ms linear;
     transition: color 300ms linear;  
     &:hover  {
    
         background-color: $secondary-bg-color; 
     }
+& svg {
+    @extend %link;
+    width: 26px;
+    height: 26px;
+    fill: $secondary-bg-color;   
+    transition: fill 200ms linear;   
+   }
+
     &:hover svg {
         fill: $primary-white-color;
     } 
      
 }
-.icon-effect__link svg {
-    @extend %link;
-    width: 26px;
-    height: 26px;
-    fill: $secondary-bg-color;   
-    -webkit-transition: fill 200ms linear;   
-    -o-transition: fill 200ms linear;   
-    transition: fill 200ms linear;   
-   }
 
 
 .background_list {
@@ -126,8 +88,6 @@
     height: 470px;
     background-color:$secondary-green-color;
     opacity: 0;
-    -webkit-transition: opacity 200ms linear;
-    -o-transition: opacity 200ms linear;
     transition: opacity 200ms linear;
 }
 

@@ -1,78 +1,99 @@
 .team {
-    margin: 0 auto;
-    padding-bottom: 70px;
+  margin: 0 auto;
+  padding-bottom: 70px;
 }
+
 .team-block__text {
-    padding-bottom: 23px;
+  padding-bottom: 23px;
 }
+
 .team-block__title {
-    padding-bottom: 51px;
+  padding-bottom: 51px;
 
 }
 
 .team-block__another-text {
-    color: $main-text-color;
-    font: 400 15px "Roboto", sans-serif;
-    line-height: 24px;
-    text-align: center;
-    margin: 0 auto;
-    padding: 0 120px 92px;
+  color: $main-text-color;
+  font: 400 15px "Roboto", sans-serif;
+  line-height: 24px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 120px 92px;
 }
 
 .team-block__list {
-    @extend %list;
-    margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+  @extend %list;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
 
 }
 
 .team-block__item {
-    margin: 0 auto;
-    position: relative;
-    width: 380px;
+  margin: 0 auto;
+  position: relative;
+  width: 380px;
 
-    &:hover {
-        -webkit-box-shadow: 5px 5px 10px rgba(153, 153, 153, 0.5),
-            -5px -5px 10px rgba(153, 153, 153, 0.5),
-            -5px 5px 10px rgba(153, 153, 153, 0.5),
-            5px -5px 10px rgba(153, 153, 153, 0.5);
-                box-shadow: 5px 5px 10px rgba(153, 153, 153, 0.5),
-            -5px -5px 10px rgba(153, 153, 153, 0.5),
-            -5px 5px 10px rgba(153, 153, 153, 0.5),
-            5px -5px 10px rgba(153, 153, 153, 0.5);
-        border-radius: 5px;
-    }
-    
-    &:hover .background_list {
-        opacity: 1;
-    }    
- 
-    &:hover .icon-effect {
-        opacity: 1;
-    }
+  &:hover {
+    box-shadow: 5px 5px 10px rgba(153, 153, 153, 0.5),
+      -5px -5px 10px rgba(153, 153, 153, 0.5),
+      -5px 5px 10px rgba(153, 153, 153, 0.5),
+      5px -5px 10px rgba(153, 153, 153, 0.5);
+    border-radius: 5px;
+  }
+
+  &:hover .background_list {
+    opacity: 1;
+  }
+
+  &:hover .icon-effect {
+    opacity: 1;
+  }
 }
 
 .team-block__item-name {
-    margin: 0 auto;
-    font: 400 14px 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 15px;
+  margin: 0 auto;
+  font: 400 14px 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 15px;
 }
 
 .team-block__item-position {
-    margin: 0 auto;
-    font: 400 15px "Roboto", sans-serif;
-    color: $main-text-color;
-    text-align: center;
-    padding-bottom: 15px;
+  margin: 0 auto;
+  font: 400 15px "Roboto", sans-serif;
+  color: $main-text-color;
+  text-align: center;
+  padding-bottom: 15px;
 
 }
 
 
+@media (min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .mattew {
+    background-image: linear-gradient(0deg, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%),
+      url(../img/Layer_16@2x.png);
+    background-size: contain;
+
+  }
+
+  .cristoph {
+    background-image: linear-gradient(0deg, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%),
+      url(../img/Layer_19@2x.png);
+    background-size: contain;
+  }
+
+  .michael {
+    background-image: linear-gradient(0deg, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%),
+      url(../img/Layer_18@2x.png);
+    background-size: contain;
+    background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%,
+        rgba(243, 129, 129, 0.9) 100%),
+      url(../img/Layer_15@2x.png);
+  }
+
+}
