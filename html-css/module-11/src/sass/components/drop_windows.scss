@@ -1,97 +1,98 @@
-
 .icon-effect {
-    display: flex;
-            justify-content: center;
-        align-content: center;
-    position: absolute;
-    margin: 0 auto;
-    bottom: 0;
-    left: -10px;
-    top: -10px;
-    width: 380px;
-    height: 470px;
-    z-index: 2;    
-    opacity: 0;
-    transition: color 200ms linear;
-        transition: opasity 200ms linear;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  margin: 0 auto;
+  bottom: 0;
+  left: -10px;
+  top: -10px;
+  width: 380px;
+  height: 470px;
+  z-index: 2;
+  opacity: 0;
+  transition: color 200ms linear;
+  transition: opasity 200ms linear;
 }
+
 .mattew {
-    background-image: linear-gradient( 0deg,rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%),
+  background-image: linear-gradient(0deg, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%),
     url(../images/Layer_16.png);
-    position: absolute;
-    z-index: 3; 
+  position: absolute;
+  z-index: 3;
 }
 
 .cristoph {
-    background-image: linear-gradient( 0deg,rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%),
+  background-image: linear-gradient(0deg, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%),
     url(../images/Layer_19.png);
-    position: absolute;
-    z-index: 3; 
-}
-.michael {
-    background-image: linear-gradient( 0deg,rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%),
-    url(../images/Layer_18.png);
-    position: absolute;
-    z-index: 3; 
+  position: absolute;
+  z-index: 3;
 }
 
+.michael {
+  background-image: linear-gradient(0deg, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%),
+    url(../images/Layer_18.png);
+  position: absolute;
+  z-index: 3;
+}
 
 
 .icon-effect__list {
-    @extend %list;
-    display: flex;  
-    margin: 0 auto;
-    align-items: center;
+  @extend %list;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
 
 }
 
 
 .icon-effect__link {
-    @extend %link;
-    
-    display: flex;
-            justify-content: center;      
-            align-items: center;
-    width: 56px;
-    height: 56px;
-    background-color: $main-yellow-color;
-    cursor: pointer;
-    transition: color 200ms linear;
-    border-left: 1px solid $secondary-bg-color;
-    transition: color 300ms linear;  
-    &:hover  {
-   
-        background-color: $secondary-bg-color; 
-    }
-& svg {
+  @extend %link;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  background-color: $main-yellow-color;
+  cursor: pointer;
+  transition: color 200ms linear;
+  border-left: 1px solid $secondary-bg-color;
+  transition: color 300ms linear;
+
+  &:hover {
+
+    background-color: $secondary-bg-color;
+  }
+
+  & svg {
     @extend %link;
     width: 26px;
     height: 26px;
-    fill: $secondary-bg-color;   
-    transition: fill 200ms linear;   
-   }
+    fill: $secondary-bg-color;
+    transition: fill 200ms linear;
+  }
 
-    &:hover svg {
-        fill: $primary-white-color;
-    } 
-     
+  &:hover svg {
+    fill: $primary-white-color;
+  }
+
 }
 
 
 .background_list {
-    @extend %list;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 380px;
-    height: 470px;
-    background-color:$secondary-green-color;
-    opacity: 0;
-    transition: opacity 200ms linear;
+  @extend %list;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 380px;
+  height: 470px;
+  background-color: $secondary-green-color;
+  opacity: 0;
+  transition: opacity 200ms linear;
 }
 
 .icon-effect__item:hover {
-    background-color: $secondary-bg-color;
+  background-color: $secondary-bg-color;
 }
-

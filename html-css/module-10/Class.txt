@@ -34,6 +34,7 @@ service-block
   service-block__item
     service-block__item-title
     service-block__item-text
+service-block__item--icon_clock 
 
 team-block
 	team-block__text

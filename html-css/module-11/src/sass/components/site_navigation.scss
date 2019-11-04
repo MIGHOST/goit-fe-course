@@ -1,52 +1,52 @@
-
-
 .nav-list {
-    @extend %list;
-    min-width: 490px;   
-    display: flex;
-            justify-content: space-between;
+  @extend %list;
+  min-width: 490px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav_list__item {
-    display: inline-flex;
+  display: inline-flex;
 
 }
 
 
-.nav-list__link{ 
-    @extend %link;
+.nav-list__link {
+  @extend %link;
   color: $primary-white-color;
-    margin: 0 auto;
-    font: 300 14px 'Montserrat', sans-serif;
-    text-transform: uppercase;   
-    line-height: 1.2;
-    transition: color 200ms linear;
+  margin: 0 auto;
+  font: 300 14px 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  line-height: 1.2;
+  transition: color 200ms linear;
 
-    &:hover,
-    &:focus {
-       color: $main-yellow-color;
-    }
+  &:hover,
+  &:focus {
+    color: $main-yellow-color;
+  }
 
-    &:after {
-        display: block;
-        margin-top: 5px;
-        content: "";
-        height: 2px;
-        width: 0;
-        background-color: $main-yellow-color;
-        transition: width .3s ease-in-out;
-    }
-    &:hover::after,
-    &:focus::after {
-        width: 100%;
-    } 
-} 
-.link__nav-icon {
-    width: 18px;
-    height: 18px;
-    fill: $primary-white-color;
-    &:hover {
-        fill: $main-yellow-color;   
-        }
+  &:after {
+    display: block;
+    margin-top: 5px;
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: $main-yellow-color;
+    transition: width .3s ease-in-out;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    width: 100%;
+  }
 }
 
+.link__nav-icon {
+  width: 18px;
+  height: 18px;
+  fill: $primary-white-color;
+
+  &:hover {
+    fill: $main-yellow-color;
+  }
+}
