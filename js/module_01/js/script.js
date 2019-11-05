@@ -1,13 +1,11 @@
 'use strict';
 
-
+//Task 1
 const name = 'protectiveFieldGenerator';
 let price = 1000;
-const string = `${name} selected, unit price ${price} credits`;
+let string = `${name} selected, unit price ${price} credits`;
 
 console.log(string);
 
 price = 2000;
-const string2 = `${name} selected, unit price ${price} credits`;
-
-console.log(string2);
+console.log(string);
