@@ -22,3 +22,13 @@ type =
 console.log(type);
 
 //Task 3
+const ADMIN_PASSWORD = 'jqueryismyjam';
+let message;
+while (true) {
+  ADMIN_PASSWORD = prompt("Enter password")
+  
+  if ( ADMIN_PASSWORD === null) {
+    massage = 'canceled by user';
+    break;
+  } 
+}
