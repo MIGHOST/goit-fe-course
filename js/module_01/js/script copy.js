@@ -23,21 +23,27 @@ console.log(type);
 
 //Task 3
 const ADMIN_PASSWORD = 'jqueryismyjam';
-let a;
 let message;
-a = prompt("Enter password", ''); {
 
-    if (a === null) {
-    message = 'Cenceled by user';     
+
+
+  message = prompt("Enter password", ""); {
+    if (prompt == null) {
   
-    } else if (a === ADMIN_PASSWORD) {
+      message == 'Cenceled by user';
   
-      message = 'Welcome';
-  
-    } else if (a != ADMIN_PASSWORD) {
-      message = 'Access denied, wrong password!';
     };
+  
+    if (message === ADMIN_PASSWORD) {
+  
+      message == 'Welcome';
+  
+    };
+  
+    if (message != ADMIN_PASSWORD) {
+      message = 'Access denied, wrong password!';
+    }
 
-  } ;
+  } 
 
   alert(message); 
